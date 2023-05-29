@@ -131,10 +131,6 @@ body{
     font-family: var(--ff-primary);
 }
 
-main{
-    /* display: flex; */
-    /* justify-content: center; */
-}
 
 
 /* utility classes */
@@ -240,9 +236,12 @@ body{
     width: 100vw;
     position: fixed;
     background-color: var(--clr-primary);
+    width: 100%;
 }
 
+
 .header{
+    overflow: hidden;
     align-items: center;
     /* justify-content: center; */
     width: min(1128px, 100%);
@@ -355,15 +354,13 @@ main{
 }
 
 .personal-content{
-    min-width: var(--personal-block-width);
+    min-width: min(var(--personal-block-width), 100%);
 }
 
 .profile-Premium{
     background-color: var(--clr-primary);
 }
 
-.profile-details{
-}
 
 .lgt-bg{
     height: 56.25px;
@@ -459,7 +456,7 @@ main{
 }
 
 .start-post-feeds{
-    width: var(--feeds-block-width);
+    width: min(var(--feeds-block-width), 100%);
     /* background-color: lightblue; */
 }
 
