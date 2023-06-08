@@ -259,6 +259,15 @@ body{
 .nav-button-tooltip{
     display: var(--nav-tooltip-dispaly);
 }
+.nav-buttons{
+    transition: .2s;
+}
+.nav-buttons:hover{
+    color: black;
+}
+.premium-link:hover{
+    font-weight: bold;
+}
 
 .search{
     display: var(--search-bar-display);
